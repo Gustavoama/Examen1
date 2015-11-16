@@ -1,0 +1,37 @@
+<%= form_for(@docente) do |f| %>
+  <% if @docente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@docente.errors.count, "error") %> prohibited this docente from being saved:</h2>
+
+      <ul>
+      <% @docente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombre %><br>
+    <%= f.text_field :Nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :Clase %><br>
+    <%= f.text_field :Clase %>
+  </div>
+  <div class="field">
+    <%= f.label :Asistio %><br>
+    <%= f.check_box :Asistio %>
+  </div>
+  <div class="field">
+    <%= f.label :Descripcion %><br>
+    <%= f.text_area :Descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :Fecha %><br>
+    <%= f.datetime_select :Fecha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

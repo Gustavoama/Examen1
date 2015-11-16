@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Nombre: MyString
+  Clase: MyString
+  Nota: 1
+  Asistio: false
+  Observacion: MyText
+  Fecha: 2015-11-11 10:49:46
+
+two:
+  Nombre: MyString
+  Clase: MyString
+  Nota: 1
+  Asistio: false
+  Observacion: MyText
+  Fecha: 2015-11-11 10:49:46
